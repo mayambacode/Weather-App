@@ -1,11 +1,11 @@
 // WEATHER APP
-require('dotenv').config()
+require('dotenv').config();
 
 
 const weatherForm = document.querySelector('.weatherForm');
 const cityInput = document.querySelector('.cityInput');
-const card = document.querySelector('.card');
-const apiKey = proccess.env.SECRET_KEY;
+const card = document.querySelector(".card");
+const apiKey = process.env.SECRET_KEY;
 
 weatherForm.addEventListener('submit',event =>{
 
@@ -50,6 +50,8 @@ function displayError(message){
     errorDisplay.classList.add("errorDisplay");
 
     card.textContent = "";
-    card.computedStyleMap.display = "flex";
+    card.style.display = "flex";
     card.appendChild(errorDisplay);
+
+    console.log("error display");
 }
