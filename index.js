@@ -2,12 +2,12 @@
 // require('dotenv').config();
 
 
-const weatherForm = document.querySelector('.weatherForm');
-const cityInput = document.querySelector('.cityInput');
+const weatherForm = document.querySelector(".weatherForm");
+const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
 // const apiKey = "process.env.SECRET_KEY";
 
-weatherForm.addEventListener('submit',event =>{
+weatherForm.addEventListener("submit", event =>{
 
     //stops form from refreshing
     event.preventDefault();
