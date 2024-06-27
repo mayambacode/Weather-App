@@ -1,11 +1,11 @@
 // WEATHER APP
-require('dotenv').config();
+// require('dotenv').config();
 
 
 const weatherForm = document.querySelector('.weatherForm');
 const cityInput = document.querySelector('.cityInput');
 const card = document.querySelector(".card");
-const apiKey = process.env.SECRET_KEY;
+// const apiKey = "process.env.SECRET_KEY";
 
 weatherForm.addEventListener('submit',event =>{
 
@@ -17,10 +17,11 @@ weatherForm.addEventListener('submit',event =>{
 
     // if there is a city name do something with
     if(city){
-
+        console.log("City name");
     }
     else {
         displayError("Please enter a city name");
+        console.log("Enter city name is working");
     }
 
 });
@@ -53,5 +54,5 @@ function displayError(message){
     card.style.display = "flex";
     card.appendChild(errorDisplay);
 
-    console.log("error display");
+    console.log("error display is working");
 }
